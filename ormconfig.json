@@ -1,0 +1,18 @@
+{
+    "type":"postgres",
+    "host": "localhost",
+    "port": 5432,
+    "username": "dayo",
+    "password": "postgres",
+    "database": "wallet",  
+    "entities": [
+        "src/entity/**/*.ts"
+    ],
+    "migrations":["src/migration/**/*.ts"],
+    "cli": {
+        "entitiesDir": "src/entity",
+        "migrationsDir": "src/migration"
+     },
+    "synchronize": true,
+    "logging": false   
+}
